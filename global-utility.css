@@ -1,0 +1,190 @@
+body {
+  background: #fff;
+  color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-wrap {
+  flex: 1;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 140px 40px 100px;
+  width: 100%;
+}
+
+.page-eyebrow {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #aaa;
+  margin-bottom: 12px;
+}
+
+.page-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.page-section-title {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.page-section p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.page-section a {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.page-section a:hover { color: #0049D1; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #aaa;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 0.95rem;
+  padding: 10px 0;
+  outline: none;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #000;
+  transition: border-color 0.2s;
+  width: 100%;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder { color: #ccc; }
+
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus { border-color: #000; }
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-submit {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+
+.form-submit:hover { background: #333; }
+
+@media (max-width: 768px) {
+  .page-wrap { padding: 120px 20px 80px; }
+}
+
+
+
+.footer-wrapper .email-section {
+  text-align: center;
+}
+
+.footer-wrapper .email-heading {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.footer-wrapper .email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.footer-wrapper .name-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-wrapper .name-row .email-input {
+  width: 50%;
+  flex: 1;
+}
+
+.footer-wrapper .email-input {
+  padding: 0.75rem;
+  border: 1px solid rgba(255,255,255,0.85);
+  background: transparent;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.footer-wrapper .email-input::placeholder {
+  color: rgba(255,255,255,0.85);
+}
+
+.footer-wrapper .submit-btn {
+  padding: 0.75rem;
+  background: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.footer-wrapper .submit-btn:hover {
+  background-color: #0049D1;
+  color: #fff;
+}

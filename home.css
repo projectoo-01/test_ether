@@ -1,0 +1,502 @@
+body {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-content {
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+@import url('https://fonts.cdnfonts.com/css/network-free-version');
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.know-us {
+    background-color: #fff;
+    position: relative;
+}
+
+.know-us-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.featuring-label {
+    font-size: 0.95rem;
+    letter-spacing: 0.15em;
+    text-transform: lowercase;
+    opacity: 0.65;
+}
+
+.know-us-text {
+    width: 50%;
+    background-color: white;
+    color: black;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.know-us h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: -15px;
+    margin-bottom: 12px;
+}
+
+.oremi-label {
+    font-family: 'Network Free Version', sans-serif;
+    font-size: 4.25rem !important;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    opacity: 1;
+    margin-top: 0 !important;
+    margin-bottom: 10px;
+}
+
+.know-us-image {
+    width: 50%;
+    background-image: url('https://res.cloudinary.com/djmffrvpg/image/upload/v1777042728/670916678_18081291908569411_4478001872865064957_n_hsquhp.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.know-us p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.know-us-footer {
+    margin-top: auto;
+    font-size: 0.95rem;
+    opacity: 0.85;
+    font-weight: 500;
+}
+
+.scope {
+    background-color: black;
+    position: relative;
+    min-height: 100vh;
+}
+
+.scope-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.scope-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://res.cloudinary.com/dio49rnxg/image/upload/v1746523651/middle_mockup_2_ytw61j.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.scope-text {
+    max-width: 100%;
+    height: auto;
+    z-index: 2;
+    text-align: center;
+}
+
+.ore-mi-carousel {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #000;
+}
+
+.carousel-track {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+    background: #111;
+}
+
+.carousel-slide.active { opacity: 1; }
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    background: #000;
+}
+
+.carousel-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.1) 50%, transparent 100%);
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px;
+}
+
+.carousel-overlay-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.carousel-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.carousel-label:hover { color: #fff; }
+
+.carousel-person {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    min-height: 28px;
+    transition: opacity 0.4s ease;
+}
+
+.carousel-person span {
+    color: rgba(255,255,255,0.6);
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-left: 8px;
+}
+
+.carousel-progress {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    gap: 6px;
+    z-index: 3;
+}
+
+.carousel-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-dot.active {
+    background: #fff;
+    transform: scale(1.3);
+}
+
+.carousel-timer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: #fff;
+    width: 0%;
+    z-index: 3;
+    transition: width linear;
+}
+
+.video-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 1;
+}
+
+.video-playpause {
+    position: relative;
+    z-index: 3;
+    background: none;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease, border-color 0.2s, background 0.2s;
+}
+
+.video-section:hover .video-playpause,
+.video-section.paused .video-playpause { opacity: 1; }
+
+.video-playpause:hover {
+    border-color: #fff;
+    background: rgba(255,255,255,0.1);
+}
+
+.video-creator {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 3;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.video-creator-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.5);
+}
+
+.video-creator-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.3px;
+}
+
+.video-support-btn {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 8px 20px;
+    text-decoration: none;
+    margin-top: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.video-support-btn:hover {
+    background: transparent;
+    color: #fff;
+    outline: 1px solid #fff;
+}
+
+@media (max-width: 768px) {
+    .know-us-content { flex-direction: column; }
+    .know-us-text, .know-us-image { width: 100%; padding: 40px 20px; }
+    .know-us h1 { font-size: 2rem; }
+    .portfolio-grid-m { grid-template-columns: 1fr; }
+    .portfolio-slide { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+    .portfolio-slide { grid-template-columns: 1fr; }
+}
+
+  .name-row {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .name-row .email-input {
+    width: 50%;
+  }
+
+  #form-status {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 0.5rem;
+    min-height: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+  }
+
+  #form-status.error {
+    color: rgba(255, 80, 80, 0.8);
+  }
+  body {
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+    background-color: white; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+  max-width: 800px;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in;
+  position: relative; 
+  z-index: 100; 
+}
+
+.logo {
+  width: 50%;
+  margin-bottom: 4rem;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+  position: relative; 
+  z-index: 100; 
+}
+
+.email-section {
+  position: relative; 
+  z-index: 100; 
+}
+
+.email-heading {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.email-input {
+  padding: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  background: transparent;
+  color: white;
+  font-size: 0.9rem;
+  transition: border-color 0.3s ease;
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: white;
+  background-color: #fff;
+  color: #000;
+}
+
+.email-input:focus::after {
+  outline: none;
+  border-color: white;
+  background-color: #fff;
+}
+
+.email-input::placeholder {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.submit-btn {
+  padding: 0.75rem;
+  background: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: opacity 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0049D1;
+    color: #fff;
+    opacity: 0.9;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  #myVideo {
+    display: none; 
+  }
+  
+  body {
+    background-color: #fff; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+  .main-message {
+    font-size: 1rem;
+  }
+  .email-heading {
+    font-size: 0.9rem;
+  }
+  .logo {
+    width: 150px;
+    margin-bottom: 3rem;
+  }
+  
+}
